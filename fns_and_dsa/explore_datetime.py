@@ -20,15 +20,15 @@ Look into the datetime.now() function to get the current date and time.
 Use timedelta(days=number_of_days) to represent the duration to add to the current date.
 Remember, Python’s official documentation is an excellent resource for learning how to use the standard library modules.
 """
-import datetime
+from datetime import datetime, timedelta
 
 def display_current_datetime():
-    current_date = datetime.datetime.now()
+    current_date = datetime.now()
     print(f"Current date and time: {current_date.strftime('%Y-%m-%d %H:%M:%S')}")
 
 def calculate_future_date(days):
-    current_date = datetime.datetime.now()
-    future_date = current_date + datetime.timedelta(days=days)
+    current_date = datetime.now()
+    future_date = current_date + timedelta(days=days)
     print(f"Future date: {future_date.strftime('%Y-%m-%d')}")
 
 def main():
