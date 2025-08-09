@@ -16,8 +16,11 @@ Continue until the pattern forms a square of the inputted size.
 """
 
 size = int(input("Enter the size of the pattern: "))
+i = 0
+j = 0
 
-for i in range(size):
+while i < size:
     for j in range(size):
         print("*", end="")
     print()
+    i += 1
